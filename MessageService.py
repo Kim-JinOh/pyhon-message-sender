@@ -12,7 +12,7 @@ def send( kakao_api_key, kakao_redirect_uri, kakao_code ):
     'client_id':kakao_api_key,
     'redirect_uri':kakao_redirect_uri,
     'client_secret': '0lTSlxsNcBqpTEbXmPpoAzsOocoD2kIz',
-    'code': 'gfmwSHeDVtmcepXm__sIhUyBiAyuU20p-ErxptKXjXMBNfdjLr9xFMG3rvtqVrI2hv_5PgorDKgAAAGGXi89cg'
+    'code': os.getenv('KAKAO_CODE')
     }
     header = {
         'Content-Type':'application/x-www-form-urlencoded'
